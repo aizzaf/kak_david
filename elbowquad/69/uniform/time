@@ -9,40 +9,22 @@ FoamFile
 {
     format      ascii;
     class       dictionary;
-    location    "system";
-    object      controlDict;
+    location    "69/uniform";
+    object      time;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     icoFoam;
+beginTime       0;
 
-startFrom       latestTime;
+value           68.9999999999982236;
 
-startTime       0;
+name            "69";
 
-stopAt          endTime;
-
-endTime         75;
+index           1380;
 
 deltaT          0.05;
 
-writeControl    timeStep;
-
-writeInterval   20;
-
-purgeWrite      0;
-
-writeFormat     ascii;
-
-writePrecision  6;
-
-writeCompression off;
-
-timeFormat      general;
-
-timePrecision   6;
-
-runTimeModifiable true;
+deltaT0         0.05;
 
 
 // ************************************************************************* //
